@@ -173,12 +173,12 @@ def main():
     if args.bucket:
         user_bucket_name = args.bucket
     else:
-        print "Enter name of bucket containing app bundles:"
+        print("Enter name of bucket containing app bundles:")
         user_bucket_name = raw_input()
     if args.iam:
         user_iam_role = args.iam
     else:
-        print "Enter IAM role (string like 'arn:aws:iam::xxxxxxxxxxxx:role/xxxxxxxxxxxxx)' :"
+        print("Enter IAM role (string like 'arn:aws:iam::xxxxxxxxxxxx:role/xxxxxxxxxxxxx)' :")
         user_iam_role = raw_input()
 
     run_config_1 = create_robot_build_task()
